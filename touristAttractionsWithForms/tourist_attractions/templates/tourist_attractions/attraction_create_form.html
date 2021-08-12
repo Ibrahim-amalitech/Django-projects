@@ -1,0 +1,18 @@
+{% extends "tourist_attractions/base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'tourist_attractions/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Add a new attraction</h1>
+<form action="" method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="Submit" value="Submit">
+</form>
+{% endblock %}
+
+  
+

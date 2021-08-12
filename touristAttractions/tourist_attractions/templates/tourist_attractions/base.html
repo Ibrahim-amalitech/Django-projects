@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+  {% load static %}
+  {% block head %}
+  <link rel="stylesheet" href="{% static 'tourist_attractions/style.css' %}">
+  {% endblock %}
+
+</head>
+<body>
+ <a href="{% url 'home' %}">Take me home</a> 
+{% block content %}
+{% endblock %}
+
+</body>
